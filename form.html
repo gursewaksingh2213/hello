@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Form Data will be posted to below URL metnioned by action property-->
+    <!-- <form method="POST" action="https://www.google.com" novalidate> -->
+        <form method="POST" action="https://www.google.com" >
+            <fieldset>
+                <legend>User Details</legend>
+                <p>
+                    <label for="fname"> FName</label>
+                    <input type="text"  id="fname" placeholder="Enter your First Name"
+                    required
+                    autocomplete="off" />
+                </p>
+                <p>
+                    <label for="lname"> LName</label>
+                    <input type="text"  id="lname" />
+                </p>
+    
+    from Mukta to All Attendees:
+    <p>
+                    <label>Email</label>
+                    <input type="email" />
+                </p>
+                <p>
+                    <label>Password</label>
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" 
+                    title="Use 6-20 characters, at least 1 uppercase letter and 1 number."
+                    
+                </p>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <p>
+                <label>BirthDay</label>
+                <input type="date" /> 
+                
+            </p>
+            <p>
+                Geneder
+                <input type="radio" value="male" name="gender" />
+                <label>Male</label>
+                <input type="radio" value="female" name="gender" />
+                <label>female</label>
+            </p>
+            </fieldset>
+            <fieldset>
+                <legend>Address Details</legend>
+                <label>Address</label>
+                <input type="text" /> <br/>
+                <label>PinCode</label>
+                <input type="text" minlength="3" maxlength="5"/>
+            </fieldset>
+            <button>Submit</button>
+            <button formmethod="GET" formaction="https://www.microsoft.com" formnovalidate>Cancel</button>
+            <button formmethod="GET" formaction="https://www.yahoo.com">Change</button>
+        </form>
+    </form>
+</body>
+</html>
